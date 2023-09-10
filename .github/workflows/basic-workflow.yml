@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: Pring Greeting
-        run: echo "Hello World!"
+        run: |
+            echo "Hello World!"
+            echo "How are you?"
       - name: Pring Goodby
         run: echo "By!"
