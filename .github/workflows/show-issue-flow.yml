@@ -1,0 +1,13 @@
+name: Show New Issue
+on:
+    issues:
+        types: [opened]
+jobs:
+    show-issue:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show Issue
+              run: |
+                    echo "New Issue Opened:"
+                    echo "Title: ${{ github.event.issue.title }}"
+                    echo "Body: ${{ github.event.issue.body }}"
