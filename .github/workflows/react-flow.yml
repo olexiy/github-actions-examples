@@ -35,7 +35,7 @@ jobs:
             - name: Run Tests
               run: npm test
             - name: Output value
-              run: echo $MONGO_CLUSTER
+              run: echo "MONGODB Cluster Name : ${{$MONGO_CLUSTER}}"
     build:
       needs: [test, lint]
       runs-on: ubuntu-latest
